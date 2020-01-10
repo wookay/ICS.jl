@@ -30,7 +30,7 @@ event = parse(VEvent, data)
 @test event.dtstart == Date(2008,2,12)
 @test event.dtend == Date(2008,2,13)
 @test event.dtstamp == DateTime(2015,4,21,14,14,03)
-@test event.uid == UUID("c7614cff-3549-4a00-9152-d25cc1fe077d")
+@test event.uid == "c7614cff-3549-4a00-9152-d25cc1fe077d"
 @test event.sequence == 0
 
 data = raw"""

@@ -1,14 +1,13 @@
 # module ICS
 
 using Dates
-using UUIDs
 
 const RRule = NamedTuple
 const Geo = NamedTuple{(:lat, :long), Tuple{Float64, Float64}}
 
 struct VEvent
     summary::Union{Missing,String}
-    uid::Union{Missing,UUID}
+    uid::Union{Missing,String}
     sequence::Union{Missing,Int}
     status::Union{Missing,String}
     transp::Union{Missing,String}

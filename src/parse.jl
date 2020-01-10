@@ -1,9 +1,5 @@
 # module ICS
 
-function feed(data::String, ::Val{:UID})
-    UUID(data)
-end
-
 function feed(data::String, ::Val{:SEQUENCE})
     parse(Int, data)
 end
